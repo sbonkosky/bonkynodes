@@ -6,8 +6,8 @@ class RandomStuff:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "resolutions": ("STRING", {"multiline": True}),
-                "samplers": ("STRING", {"multiline": True}),
+                "resolutions": ("STRING", {"multiline": True, "default": "1024x1024,1920x1080,1080x1920"}),
+                "samplers": ("STRING", {"multiline": True, "default": "euler|normal,euler|simple,euler|beta,deis|normal,deis|simple,deis|bdim_uniform,uni_pc_bh2|beta,heun|normal"}),
                 "seed": ("INT",{"default": random.randint(1,999999999), "min": 0, "max": 0xffffffffffffffff})
             }
         }
