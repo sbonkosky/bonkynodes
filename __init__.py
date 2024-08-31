@@ -1,11 +1,8 @@
-from .random_resolution import RandomResolution
-from .random_integer import RandomInteger 
+from .random_stuff import RandomStuff
 
 NODE_CLASS_MAPPINGS = {
-    "randomResolution": RandomResolution,
-    "randomInteger": RandomInteger
+    "RandomStuff": RandomStuff
 }
 NODE_DISPLAY_NAMES_MAPPINGS = {
-    "randomResolution": "Random Resolution",
-    "randomInteger": "Random Integer"
+    "RandomStuff": "Random Stuff"
 }
